@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Корзина — Онлайн-Театр</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header>
+    <div class="container header-inner">
+        <a href="index.html" class="logo">🎭 Онлайн-Театр</a>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="afisha.html">Афиша</a>
+            <a href="news.html">Новости</a>
+            <a href="blog.html">Блог</a>
+            <a href="faq.html">FAQ</a>
+            <a href="about.html">О театре</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="account.html">👤 Кабинет</a>
+            <a href="cart.html" class="cart active">🛒 2</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <h1>Корзина</h1>
+
+    <table>
+        <tr><th>Спектакль</th><th>Жанр</th><th>Цена</th><th></th></tr>
+        <tr>
+            <td>Гамлет</td><td>Драма</td><td>800 ₽</td>
+            <td><a href="#" class="btn btn-outline btn-sm" onclick="alert('Удалено (демо)');return false;">Удалить</a></td>
+        </tr>
+        <tr>
+            <td>Щелкунчик</td><td>Балет</td><td>900 ₽</td>
+            <td><a href="#" class="btn btn-outline btn-sm" onclick="alert('Удалено (демо)');return false;">Удалить</a></td>
+        </tr>
+        <tr><th colspan="2">Итого</th><th>1700 ₽</th><th></th></tr>
+    </table>
+
+    <div style="margin-top:20px;">
+        <a href="checkout.html" class="btn">Оформить заказ →</a>
+        <a href="#" class="btn btn-outline" onclick="alert('Корзина очищена (демо)');return false;">Очистить</a>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Онлайн-Театр · Все права защищены</p>
+        <p><a href="about.html">О театре</a> · <a href="contacts.html">Контакты</a> · <a href="faq.html">FAQ</a></p>
+    </div>
+</footer>
+</body>
+</html>

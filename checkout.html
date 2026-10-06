@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Оплата — Онлайн-Театр</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header>
+    <div class="container header-inner">
+        <a href="index.html" class="logo">🎭 Онлайн-Театр</a>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="afisha.html">Афиша</a>
+            <a href="news.html">Новости</a>
+            <a href="blog.html">Блог</a>
+            <a href="faq.html">FAQ</a>
+            <a href="about.html">О театре</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="account.html">👤 Кабинет</a>
+            <a href="cart.html" class="cart active">🛒 2</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <h1>Оплата</h1>
+
+    <div class="grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="card">
+            <h3>Ваш заказ</h3>
+            <p>Гамлет — <strong>800 ₽</strong></p>
+            <p>Щелкунчик — <strong>900 ₽</strong></p>
+            <hr style="margin:12px 0;border:none;border-top:1px solid #eee;">
+            <p><strong>Итого: 1700 ₽</strong></p>
+        </div>
+
+        <div class="card">
+            <h3>Данные для оплаты</h3>
+            <form onsubmit="event.preventDefault(); alert('Оплата прошла успешно! (демо)'); window.location.href='index.html';">
+                <label>Имя и фамилия</label>
+                <input type="text" required>
+                <label>Email</label>
+                <input type="email" required>
+                <label>Номер карты</label>
+                <input type="text" placeholder="0000 0000 0000 0000" required>
+                <label>Срок действия</label>
+                <input type="text" placeholder="MM/YY" required>
+                <label>CVV</label>
+                <input type="text" placeholder="000" maxlength="3" required>
+                <button type="submit" class="btn">Оплатить 1700 ₽</button>
+            </form>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Онлайн-Театр · Все права защищены</p>
+        <p><a href="about.html">О театре</a> · <a href="contacts.html">Контакты</a> · <a href="faq.html">FAQ</a></p>
+    </div>
+</footer>
+</body>
+</html>

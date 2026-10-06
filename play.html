@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Гамлет — Онлайн-Театр</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header>
+    <div class="container header-inner">
+        <a href="index.html" class="logo">🎭 Онлайн-Театр</a>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="afisha.html" class="active">Афиша</a>
+            <a href="news.html">Новости</a>
+            <a href="blog.html">Блог</a>
+            <a href="faq.html">FAQ</a>
+            <a href="about.html">О театре</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="account.html">👤 Кабинет</a>
+            <a href="cart.html" class="cart">🛒 2</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <span class="genre" style="display:inline-block;background:#e94560;color:#fff;padding:2px 10px;border-radius:12px;font-size:12px;">Драма</span>
+    <h1>Гамлет</h1>
+    <p><span class="stars">★★★★★</span> <strong>4.5</strong> · 2 отзыва</p>
+
+    <div style="background:#fff;padding:25px;border-radius:10px;margin-top:15px;">
+        <p>Трагедия Уильяма Шекспира о принце датском, мести и смысле бытия. Одна из самых известных пьес мировой драматургии в постановке нашего театра.</p>
+        <p style="margin-top:12px;"><strong>Длительность:</strong> 180 мин</p>
+        <p><strong>Возраст:</strong> 16+</p>
+        <p><strong>Цена:</strong> <span class="price" style="color:#e94560;font-weight:bold;font-size:20px;">800 ₽</span></p>
+
+        <a href="cart.html" class="btn">🛒 Купить билет</a>
+        <a href="reviews.html" class="btn btn-outline">Отзывы</a>
+    </div>
+
+    <h2>📅 Расписание</h2>
+    <table>
+        <tr><th>Дата и время</th><th>Зал</th></tr>
+        <tr><td>15.10.2026 19:00</td><td>Основная сцена</td></tr>
+        <tr><td>19.10.2026 19:00</td><td>Основная сцена</td></tr>
+        <tr><td>25.10.2026 18:00</td><td>Малая сцена</td></tr>
+    </table>
+
+    <h2>💬 Отзывы</h2>
+    <div class="card" style="margin-bottom:12px;">
+        <strong>Алексей</strong> <span class="stars">★★★★★</span>
+        <span style="color:#999;font-size:13px;"> · 02.10.2026</span>
+        <p style="margin-top:6px;">Великолепная игра актёров! Гамлет — вне конкуренции.</p>
+    </div>
+    <div class="card" style="margin-bottom:12px;">
+        <strong>Мария</strong> <span class="stars">★★★★☆</span>
+        <span style="color:#999;font-size:13px;"> · 30.09.2026</span>
+        <p style="margin-top:6px;">Отличная постановка, но немного затянуто.</p>
+    </div>
+
+    <h2>Оставить отзыв</h2>
+    <div class="card">
+        <form onsubmit="event.preventDefault(); alert('Спасибо за отзыв! (демо)');">
+            <label>Ваше имя</label>
+            <input type="text" required>
+            <label>Оценка</label>
+            <select>
+                <option>★★★★★ Отлично</option>
+                <option>★★★★ Хорошо</option>
+                <option>★★★ Нормально</option>
+                <option>★★ Плохо</option>
+                <option>★ Ужасно</option>
+            </select>
+            <label>Отзыв</label>
+            <textarea required></textarea>
+            <button type="submit" class="btn">Отправить</button>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Онлайн-Театр · Все права защищены</p>
+        <p><a href="about.html">О театре</a> · <a href="contacts.html">Контакты</a> · <a href="faq.html">FAQ</a></p>
+    </div>
+</footer>
+</body>
+</html>
